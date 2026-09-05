@@ -1,0 +1,51 @@
+panel,metric,split,model,family,est,lo,hi,learner_matched,horizon_y
+IPCW time-dependent AUC at 10 y,auc,temporal,logistic,naive,0.8241850713888804,0.8023948043584823,0.843085864186287,,10
+IPCW time-dependent AUC at 10 y,auc,temporal,cox_naive,naive,0.8242963492870331,0.8022697389125824,0.8431750565767289,,10
+IPCW time-dependent AUC at 10 y,auc,temporal,rsf_naive,naive,0.8216980795065562,0.7984092369675636,0.8412722021341323,,10
+IPCW time-dependent AUC at 10 y,auc,temporal,gbs_naive,naive,0.8248120248317719,0.8030846655368805,0.8430546343326568,,10
+IPCW time-dependent AUC at 10 y,auc,temporal,logistic_cr,competing,0.8244477768739065,0.8028230935335159,0.8432837933301925,,10
+IPCW time-dependent AUC at 10 y,auc,temporal,csc_cox,competing,0.8241459051767985,0.8021260485053062,0.8430431187152863,,10
+IPCW time-dependent AUC at 10 y,auc,temporal,fine_gray,competing,0.8239932080109914,0.8021511942148208,0.8426960170269012,,10
+IPCW time-dependent AUC at 10 y,auc,temporal,rsf_cr,competing,0.8200691481431325,0.7970689609646797,0.8393569916486741,,10
+IPCW time-dependent AUC at 10 y,auc,temporal,deephit,competing,0.8297694067160288,0.8081835433840752,0.8477678626775742,,10
+IPCW time-dependent AUC at 10 y,auc,temporal,nfg,competing,0.8289760470390319,0.8068426012992859,0.8472507074475288,,10
+IPCW time-dependent AUC at 10 y,auc,cv,logistic,naive,0.822193052371343,0.8113271936774253,0.8334435299038887,,10
+IPCW time-dependent AUC at 10 y,auc,cv,cox_naive,naive,0.8210973938306173,0.8100948244333267,0.8327292501926422,,10
+IPCW time-dependent AUC at 10 y,auc,cv,rsf_naive,naive,0.8234327097733816,0.8124620705842972,0.8352322071790695,,10
+IPCW time-dependent AUC at 10 y,auc,cv,gbs_naive,naive,0.8253525555133819,0.8149840757250786,0.8364092856645584,,10
+IPCW time-dependent AUC at 10 y,auc,cv,logistic_cr,competing,0.8223117828369141,0.8114475771784783,0.8336117282509804,,10
+IPCW time-dependent AUC at 10 y,auc,cv,csc_cox,competing,0.8210000991821289,0.8100449845194817,0.8326510921120643,,10
+IPCW time-dependent AUC at 10 y,auc,cv,fine_gray,competing,0.820265903075536,0.8091946735978126,0.8319312259554863,,10
+IPCW time-dependent AUC at 10 y,auc,cv,rsf_cr,competing,0.8217093527317048,0.8106545373797417,0.8335017368197442,,10
+IPCW time-dependent AUC at 10 y,auc,cv,deephit,competing,0.8299038648605347,0.8195864439010621,0.8409121230244636,,10
+IPCW time-dependent AUC at 10 y,auc,cv,nfg,competing,0.8286678850650787,0.8180937215685844,0.8396534010767936,,10
+Truncated IPCW concordance,cindex,temporal,logistic,naive,0.8236413717269897,0.8025069668889045,0.8418520092964172,,10
+Truncated IPCW concordance,cindex,temporal,cox_naive,naive,0.8236619353294372,0.8023474350571632,0.8417991176247597,,10
+Truncated IPCW concordance,cindex,temporal,rsf_naive,naive,0.8217720866203309,0.799365584552288,0.8406549170613289,,10
+Truncated IPCW concordance,cindex,temporal,gbs_naive,naive,0.82465527455012,0.8037721633911132,0.8423905059695244,,10
+Truncated IPCW concordance,cindex,temporal,logistic_cr,competing,0.8238886813322703,0.8030233949422836,0.841943271458149,,10
+Truncated IPCW concordance,cindex,temporal,csc_cox,competing,0.823489781220754,0.8022235736250878,0.8416085317730904,,10
+Truncated IPCW concordance,cindex,temporal,fine_gray,competing,0.8232069472471873,0.802087913453579,0.8411962687969208,,10
+Truncated IPCW concordance,cindex,temporal,rsf_cr,competing,0.8202179292837779,0.7980329796671868,0.8388756737112999,,10
+Truncated IPCW concordance,cindex,temporal,deephit,competing,0.8292651315530141,0.808622220158577,0.84660854190588,,10
+Truncated IPCW concordance,cindex,temporal,nfg,competing,0.8287020206451416,0.8075745925307274,0.8463937535881996,,10
+Truncated IPCW concordance,cindex,cv,logistic,naive,0.8306650618712107,0.8183008879423141,0.8434909120202064,,10
+Truncated IPCW concordance,cindex,cv,cox_naive,naive,0.8290553510189056,0.816957651078701,0.8417990311980248,,10
+Truncated IPCW concordance,cindex,cv,rsf_naive,naive,0.8316096862157186,0.8199090108275413,0.8434178307652473,,10
+Truncated IPCW concordance,cindex,cv,gbs_naive,naive,0.8327615638573964,0.8215720474720001,0.8441038399934768,,10
+Truncated IPCW concordance,cindex,cv,logistic_cr,competing,0.8302176912625631,0.8178697004914284,0.8431373968720436,,10
+Truncated IPCW concordance,cindex,cv,csc_cox,competing,0.8289622147878011,0.816745039820671,0.8419132515788078,,10
+Truncated IPCW concordance,cindex,cv,fine_gray,competing,0.827849543094635,0.815894465148449,0.8405942544341087,,10
+Truncated IPCW concordance,cindex,cv,rsf_cr,competing,0.8304589748382568,0.8182772442698478,0.842734245955944,,10
+Truncated IPCW concordance,cindex,cv,deephit,competing,0.8376771489779155,0.8265561982989311,0.8493988275527954,,10
+Truncated IPCW concordance,cindex,cv,nfg,competing,0.8362648169199626,0.8251745641231537,0.8476786583662033,,10
+C,auc,temporal,cox_naive - csc_cox,contrast,0.0001504441102345,-0.0004764825105667,0.00076604783535,True,10
+C,auc,temporal,rsf_naive - rsf_cr,contrast,0.0016289313634236,-0.0015406712889671,0.0048874661326408,True,10
+C,auc,temporal,logistic - logistic_cr,contrast,-0.000262705485026,-0.0016882434487342,0.0011535361409187,True,10
+C,auc,temporal,cox_naive - fine_gray,contrast,0.0003031412760416,-0.0015969365835189,0.0022507384419441,False,10
+C,auc,temporal,gbs_naive - deephit,contrast,-0.0049573818842569,-0.0122410953044891,0.0021335110068321,False,10
+C,cindex,temporal,cox_naive - csc_cox,contrast,0.0001721541086832,-0.0004266530275344,0.0007608577609062,True,10
+C,cindex,temporal,rsf_naive - rsf_cr,contrast,0.0015541573365529,-0.0014423310756683,0.0046399295330047,True,10
+C,cindex,temporal,logistic - logistic_cr,contrast,-0.0002473096052805,-0.0016042098402976,0.0010971501469612,True,10
+C,cindex,temporal,cox_naive - fine_gray,contrast,0.0004549880822499,-0.0013526678085327,0.0023190408945083,False,10
+C,cindex,temporal,gbs_naive - deephit,contrast,-0.004609857002894,-0.0116250962018966,0.0022376030683517,False,10

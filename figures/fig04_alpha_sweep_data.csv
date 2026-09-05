@@ -1,0 +1,67 @@
+row,panel_metric,protocol,alpha,sigma,est,lo,hi,n_replicates,ci_excludes_zero,units,contrast,horizon_y
+sweep,ici,inner_oof,0.0,0.1,0.1583041324704717,0.1471773101939306,0.1655631664097877,30.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,inner_oof,0.05,0.1,0.0437874234238196,0.04099412229069,0.0447056781236486,15.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,inner_oof,0.1,0.1,0.0308754155052328,0.0271458196212909,0.0325673944103914,15.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,inner_oof,0.2,0.1,0.019211226900858,0.0159982338274091,0.0221600621554842,15.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,inner_oof,0.3,0.1,0.0146984837702543,0.0118019313351535,0.0160550097753368,15.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,inner_oof,0.5,0.1,0.0094737843893177,0.0079807149153898,0.010398389914324,15.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,inner_oof,0.7,0.1,0.0068941869806972,0.0048528258024178,0.0085231122578584,15.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,inner_oof,0.85,0.1,0.0048178651915138,0.0031045026377149,0.00737948125601,15.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,inner_oof,0.95,0.1,0.0036037012223836,0.0019758190055248,0.0050817236212922,15.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,inner_oof,1.0,0.1,0.0036033088776863,0.0017733374824943,0.0050829288355498,30.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,temporal_test,0.0,0.1,0.1637074515264069,0.1582939466815354,0.1673846532533709,10.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,temporal_test,0.05,0.1,0.0451895284724319,0.0432792717143242,0.048053089604263,5.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,temporal_test,0.1,0.1,0.0364044745074632,0.0350979859904821,0.0388857610936111,5.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,temporal_test,0.2,0.1,0.0262422052691801,0.0236002086961895,0.0280108045059399,5.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,temporal_test,0.3,0.1,0.0211066155311836,0.0193162341561809,0.0219223080833885,5.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,temporal_test,0.5,0.1,0.0207651872950796,0.0188389434074329,0.0215182852414843,5.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,temporal_test,0.7,0.1,0.013802735274658,0.0120251809806806,0.0175475079659763,5.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,temporal_test,0.85,0.1,0.0145107295532076,0.0113865901581344,0.0156731823352839,5.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,temporal_test,0.95,0.1,0.0132405951283708,0.0114323296981185,0.014316391821977,5.0,,Integrated calibration index,deephit - nfg,10
+sweep,ici,temporal_test,1.0,0.1,0.0113614046061557,0.0102432829916936,0.0136986761290721,10.0,,Integrated calibration index,deephit - nfg,10
+contrast,ici,temporal,,,3.1002316934367,0.5602072458714,5.5569312535226,,True,"Δ ICI (per 1,000)",deephit - nfg,10
+contrast,ici,cv,,,1.8969901643383,-1.660646739765,3.591343446169,,False,"Δ ICI (per 1,000)",deephit - nfg,10
+sweep,eo,inner_oof,0.0,0.1,4.804101292524804,4.547649624879022,4.920897479560981,30.0,,Expected / observed,deephit - nfg,10
+sweep,eo,inner_oof,0.05,0.1,2.0127884880911435,1.9594528614182496,2.056263016678343,15.0,,Expected / observed,deephit - nfg,10
+sweep,eo,inner_oof,0.1,0.1,1.6934297105511915,1.6013631763601217,1.7498821148425538,15.0,,Expected / observed,deephit - nfg,10
+sweep,eo,inner_oof,0.2,0.1,1.4266579658110174,1.3618895642075333,1.4896039230816949,15.0,,Expected / observed,deephit - nfg,10
+sweep,eo,inner_oof,0.3,0.1,1.3106836703097744,1.2532239473047264,1.3517934238139055,15.0,,Expected / observed,deephit - nfg,10
+sweep,eo,inner_oof,0.5,0.1,1.2170188706498262,1.172885027560799,1.24348187828024,15.0,,Expected / observed,deephit - nfg,10
+sweep,eo,inner_oof,0.7,0.1,1.1609849807803247,1.121143452188529,1.200429750343631,15.0,,Expected / observed,deephit - nfg,10
+sweep,eo,inner_oof,0.85,0.1,1.1227844069297088,1.0775935174751596,1.1834696043135524,15.0,,Expected / observed,deephit - nfg,10
+sweep,eo,inner_oof,0.95,0.1,1.075700142396471,1.0377693445851697,1.1269475850475903,15.0,,Expected / observed,deephit - nfg,10
+sweep,eo,inner_oof,1.0,0.1,1.0668974750073208,1.014151699745535,1.118101029555807,30.0,,Expected / observed,deephit - nfg,10
+sweep,eo,temporal_test,0.0,0.1,5.961001468453028,5.791551638970982,6.078838724975941,10.0,,Expected / observed,deephit - nfg,10
+sweep,eo,temporal_test,0.05,0.1,2.3479203512278297,2.28486354456821,2.4368635813810817,5.0,,Expected / observed,deephit - nfg,10
+sweep,eo,temporal_test,0.1,0.1,2.0945031187157657,2.057927911285109,2.1564749019117406,5.0,,Expected / observed,deephit - nfg,10
+sweep,eo,temporal_test,0.2,0.1,1.7841615675252651,1.6977844951249568,1.840036033224126,5.0,,Expected / observed,deephit - nfg,10
+sweep,eo,temporal_test,0.3,0.1,1.6130761280881836,1.5734278234028818,1.6584637066000332,5.0,,Expected / observed,deephit - nfg,10
+sweep,eo,temporal_test,0.5,0.1,1.6315785483183909,1.5680355169328517,1.6481980673475427,5.0,,Expected / observed,deephit - nfg,10
+sweep,eo,temporal_test,0.7,0.1,1.4159657050813872,1.357269575463886,1.5297572291426669,5.0,,Expected / observed,deephit - nfg,10
+sweep,eo,temporal_test,0.85,0.1,1.4290468510175138,1.3314640834315938,1.477322310347932,5.0,,Expected / observed,deephit - nfg,10
+sweep,eo,temporal_test,0.95,0.1,1.3942189587973677,1.3388024470798132,1.429508533541098,5.0,,Expected / observed,deephit - nfg,10
+sweep,eo,temporal_test,1.0,0.1,1.3505770144879872,1.308085858789199,1.408220477399383,10.0,,Expected / observed,deephit - nfg,10
+contrast,eo,temporal,,,0.093819785118103,0.0240224987268447,0.1772040665149689,,True,Δ E/O,deephit - nfg,10
+contrast,eo,cv,,,0.0908676544825236,0.07659462839365,0.1128103122115135,,True,Δ E/O,deephit - nfg,10
+sweep,cindex,inner_oof,0.0,0.1,0.8257743417469035,0.8235477500429711,0.8325343643440375,30.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,inner_oof,0.05,0.1,0.8326868984852459,0.8291453753217308,0.8351164390431153,15.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,inner_oof,0.1,0.1,0.8323608531266478,0.829085988696087,0.8367006673499422,15.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,inner_oof,0.2,0.1,0.8334507894644175,0.8313891089577229,0.8364516735232458,15.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,inner_oof,0.3,0.1,0.833334631084122,0.8313565102326875,0.8349922733467594,15.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,inner_oof,0.5,0.1,0.8333463689494646,0.8305690621712889,0.8349348972663674,15.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,inner_oof,0.7,0.1,0.8330461817595665,0.8300099911315197,0.8351910965153532,15.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,inner_oof,0.85,0.1,0.8326171685921221,0.8290785857057671,0.8344970284024963,15.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,inner_oof,0.95,0.1,0.83134238992933,0.828709319435081,0.8344322841967308,15.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,inner_oof,1.0,0.1,0.8333858244473238,0.8285537752868194,0.8346886693920983,30.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,temporal_test,0.0,0.1,0.824846986828298,0.820194280668244,0.8257871098605891,10.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,temporal_test,0.05,0.1,0.8240255134818717,0.8221242556715642,0.82545656800475,5.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,temporal_test,0.1,0.1,0.8207520272245524,0.8202801271123922,0.8265219613362284,5.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,temporal_test,0.2,0.1,0.8225432784481732,0.8213039674378293,0.8250945860652072,5.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,temporal_test,0.3,0.1,0.8258748894692455,0.8208528017085207,0.8273320611197348,5.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,temporal_test,0.5,0.1,0.824078921670176,0.8218643693760197,0.8253570190836668,5.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,temporal_test,0.7,0.1,0.824206462795349,0.8207993117961571,0.8260192618094783,5.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,temporal_test,0.85,0.1,0.825213190062944,0.8216330135173684,0.8279305983743522,5.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,temporal_test,0.95,0.1,0.8250902034575238,0.8203409291853936,0.8262397207151234,5.0,,Truncated IPCW concordance,deephit - nfg,10
+sweep,cindex,temporal_test,1.0,0.1,0.8226125189908565,0.8205976424474051,0.8247036296495501,10.0,,Truncated IPCW concordance,deephit - nfg,10
+contrast,cindex,temporal,,,0.0005631109078725,-0.0030759185552597,0.0045218676328659,,False,Δ concordance,deephit - nfg,10
+contrast,cindex,cv,,,0.0014123320579528,-0.0002642825245857,0.0031632885336875,,False,Δ concordance,deephit - nfg,10

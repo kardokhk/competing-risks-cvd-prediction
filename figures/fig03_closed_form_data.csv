@@ -1,0 +1,92 @@
+panel,quantity,horizon_y,est,lo,hi,units
+A,sh_estimand,10.0,32.035022453561616,28.786153653392198,34.9921487678855,% of the observed difference in mean predicted risk
+A,sh_estimand,5.0,34.48352360369475,,,% of the observed difference in mean predicted risk
+A,sh_estimand,15.0,30.6950165789886,,,% of the observed difference in mean predicted risk
+A,sh_heterogeneity,10.0,72.20087018970966,66.89062926706471,77.4587454088247,% of the observed difference in mean predicted risk
+A,sh_heterogeneity,5.0,77.96023129577276,,,% of the observed difference in mean predicted risk
+A,sh_heterogeneity,15.0,68.41280401117582,,,% of the observed difference in mean predicted risk
+A,sh_timing,10.0,-3.72992115554601,-11.0840744123107,2.87080233758416,% of the observed difference in mean predicted risk
+A,sh_timing,5.0,-11.29992314922359,,,% of the observed difference in mean predicted risk
+A,sh_timing,15.0,1.25562627912157,,,% of the observed difference in mean predicted risk
+A,sh_implementation,10.0,-0.50597148772527,,,% of the observed difference in mean predicted risk
+A,sh_implementation,5.0,-1.1438317502439,,,% of the observed difference in mean predicted risk
+A,sh_implementation,15.0,-0.36344686928599,,,% of the observed difference in mean predicted risk
+A,total,10.0,100.0,,,% (definition)
+B,overlay:nhanes_stratum:age 50-54,5.0,1.0094337865580711,0.69262548668545,1.8589427719896,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 55-59,5.0,1.018065562948512,1.15157015455546,3.51410818164673,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 60-64,5.0,1.0210135778296796,1.41757229749503,4.06808419380819,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 65-69,5.0,1.0251148787398638,2.31186965066213,4.82118722341174,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 70-74,5.0,1.0452932687961582,3.1992856829173704,8.44411250873851,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 75-79,5.0,1.0662153813664004,6.5682340313340095,11.87394843775596,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:female age 50-59,5.0,1.0099824650573657,0.65661539413323,1.9658729830281398,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:female age 60-69,5.0,1.0176321679961264,1.01418346637589,3.43336359984164,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:female age 70-79,5.0,1.0414622896447254,3.2995243527275395,7.7653503103259895,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 50-59,5.0,1.0165170034878108,1.13282899098531,3.21963190714859,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 60-69,5.0,1.0280813727407083,2.6007469404769097,5.3644401989812,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 70-79,5.0,1.065832751730626,5.8057513056672905,11.844217001282969,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 6,5.0,1.0121430295850329,0.53424759664765,2.38553200885351,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 7,5.0,1.0145148612704975,0.80059607767643,2.8400252180376997,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 8,5.0,1.0252706486630585,1.74995990567628,4.859516566697089,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 9,5.0,1.0378856113617116,2.28865161218388,7.1536465914897995,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 10,5.0,1.06193145434527,6.9228713864023295,11.15184887413401,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 40-44,10.0,1.0135936830879608,0.83458430555367,2.66270666247779,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 45-49,10.0,1.0181430986641038,1.1294102111903201,3.52909785117136,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 50-54,10.0,1.0236998670355557,1.48931051369107,4.57091125486774,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 55-59,10.0,1.04803934883035,2.16078897292377,8.95736825836601,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 60-64,10.0,1.0607825994437312,4.00852288052527,11.077966438023799,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 65-69,10.0,1.0786898439728336,6.12249644744531,13.913569036893369,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 70-74,10.0,1.121890159220093,8.25940020953473,20.26925501830166,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 75-79,10.0,1.2095215043848109,15.42930548272122,30.49897356398916,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:female age 40-49,10.0,1.0137620571968111,0.6928680067067501,2.69638416875069,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:female age 50-59,10.0,1.0275902561453865,1.20952648817996,5.29940797677324,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:female age 60-69,10.0,1.0528303741405738,3.36310743175132,9.7490273042729,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:female age 70-79,10.0,1.1210420583987857,8.83816146538343,20.10336337273586,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 40-49,10.0,1.017982982670887,1.27672589084959,3.49693069766908,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 50-59,10.0,1.0404189030572888,2.34754624992487,7.60553073505784,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 60-69,10.0,1.0849250397839894,6.493444153082679,14.87886370479838,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 70-79,10.0,1.1915157229978677,13.48830796108684,28.705231874664726,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 4,10.0,1.0150611987691427,0.67320406263792,2.94607793595586,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 5,10.0,1.0176423150516185,1.09093713525823,3.4343956020678803,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 6,10.0,1.0319347042464837,1.2756595540591,6.09798190424649,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 7,10.0,1.0420931146193386,2.0208101699158503,7.91256481935111,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 8,10.0,1.070425783705895,5.03178159329043,12.632997184253231,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 9,10.0,1.1119347287069234,6.701974748452449,18.95398711449078,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 10,10.0,1.1903930815061836,15.55431764519393,28.318816719008872,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 35-39,15.0,1.013026824954711,0.82146525916875,2.5536923178406,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 40-44,15.0,1.0244380829716313,1.41968273029417,4.70987236061774,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 45-49,15.0,1.0320483311013906,1.90530860613261,6.10546385428427,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 50-54,15.0,1.0493532227579954,3.0192048569768,9.1590998662156,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 55-59,15.0,1.0852730166802165,4.0866524603436805,15.06722473909011,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 60-64,15.0,1.1174881682553246,7.5544238390961596,19.6957410244727,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 65-69,15.0,1.158138024283306,10.91328882840612,24.914489702579832,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 70-74,15.0,1.2594847640816773,16.648827631689418,35.50639300896628,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:age 75-79,15.0,1.437705324656957,24.41168059616462,47.6981042561324,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:female age 40-49,15.0,1.025302430427783,1.46888894405855,4.8701344363646895,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:female age 50-59,15.0,1.0475156577836109,2.9550960683662497,8.84085181985954,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:female age 60-69,15.0,1.1080064143509043,6.882855389168969,18.36396430727071,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:female age 70-79,15.0,1.2698886244079408,16.766944958334857,36.48858104668548,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 30-39,15.0,1.0124591706640067,0.74914754829874,2.44484087421352,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 40-49,15.0,1.0310431436127234,1.85032878177964,5.9228156348614895,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 50-59,15.0,1.0814575250488898,3.98328722435026,14.46689169357985,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 60-69,15.0,1.1643396994566997,11.21615447219278,25.670794237284078,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:male age 70-79,15.0,1.3805782114596743,22.70158813270205,44.378706247293806,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 4,15.0,1.025515909700221,1.28923704729937,4.91288884832954,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 5,15.0,1.036375644164819,2.19235214524489,6.88425509787501,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 6,15.0,1.057824882077578,2.77775729277606,10.625247202378189,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 7,15.0,1.0941316679781157,4.0535341505330305,16.45357246326219,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 8,15.0,1.1420563932620182,10.103204823923061,22.88820312907949,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 9,15.0,1.240271715222773,14.17777433488738,33.96909621285982,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_stratum:csc_cox decile 10,15.0,1.379970838644099,24.5348047824061,43.89031255442734,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_temporal_test_pooled:5 y pooled,5.0,1.0159586507454106,1.17341897233201,3.11264822134387,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_temporal_test_pooled:10 y pooled,10.0,1.0448563384333442,3.04181669881518,8.37200755357594,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,overlay:nhanes_temporal_test_pooled:15 y pooled,15.0,1.0670970638461073,4.39893270787632,12.1144115557774,est = pooled inflation; lo = F1 (%); hi = F2 (%)
+B,external_check:Truchot 2025,,1.0505840580857644,14.000000000000002,9.0,est = pooled inflation from the identity; lo = F1 (%); hi = F2 (%); published KM/AJ ratio 1.0625
+C,recovered_pooled,5.0,34.48352360369562,29.5904895933876,39.5137526881867,% of the observed difference recovered
+C,recovered_per_subject,5.0,112.44375489947429,,,% of the observed difference recovered
+C,heterogeneity_multiplier,5.0,3.2607965529202363,,,"ratio, per-subject to pooled"
+C,recovered_pooled,10.0,32.035022453561645,28.786153653392198,34.9921487678855,% of the observed difference recovered
+C,recovered_per_subject,10.0,104.23589264327235,,,% of the observed difference recovered
+C,heterogeneity_multiplier,10.0,3.253810506746919,,,"ratio, per-subject to pooled"
+C,recovered_pooled,15.0,30.69501657898813,28.1408448499472,32.9095481729056,% of the observed difference recovered
+C,recovered_per_subject,15.0,99.10782059016412,,,% of the observed difference recovered
+C,heterogeneity_multiplier,15.0,3.2287918898863563,,,"ratio, per-subject to pooled"

@@ -1,0 +1,19 @@
+panel,split,smoother,model,est,lo,hi,ci_excludes_zero,source,units,horizon_y
+A,temporal,ici,cox_naive - csc_cox,6.7462051597734005,5.0726546673104,7.2596928104758005,True,paired_contrasts.csv,"ICI per 1,000",10
+A,temporal,ici_concordant,cox_naive - csc_cox,4.6832596572736,3.9678316563367,5.434260051697399,True,paired_contrasts.csv,"ICI per 1,000",10
+A,temporal,ici_smoothfg,cox_naive - csc_cox,6.651506639639701,6.2132743810682,7.0367946336721,True,concordant_contrasts.csv,"ICI per 1,000",10
+A,temporal,ici_smoothcsh,cox_naive - csc_cox,6.6738772856253,6.2445494135877,7.0587907977413,True,concordant_contrasts.csv,"ICI per 1,000",10
+A,temporal,ici_smoothnet,cox_naive - csc_cox,6.5802441116314005,4.3439365592476005,6.9350921658603,True,concordant_contrasts.csv,"ICI per 1,000",10
+A,temporal,ici_concordant_austin,cox_naive - csc_cox,1.7988464045716999,1.1136776068131,2.5940575784183997,True,concordant_contrasts.csv,"ICI per 1,000",10
+B,temporal,ici,cox_naive,17.1064606557289,13.712009903974801,20.6241478212177,,main_metrics.csv,"ICI per 1,000",10
+B,temporal,ici_concordant,cox_naive,15.043515153229201,12.0196111733093,18.7453930266201,,main_metrics.csv,"ICI per 1,000",10
+B,temporal,ici_smoothfg,cox_naive,15.924016807516699,12.3061628529331,19.914633379548402,,concordant_metrics.csv,"ICI per 1,000",10
+B,temporal,ici_smoothcsh,cox_naive,16.0892875085959,12.4610460981088,20.0499642213546,,concordant_metrics.csv,"ICI per 1,000",10
+B,temporal,ici_smoothnet,cox_naive,11.2142566275423,7.3607930259552,15.7496490512515,,concordant_metrics.csv,"ICI per 1,000",10
+B,temporal,ici_concordant_austin,cox_naive,11.2142566275423,7.3607930259552,15.7496490512515,,concordant_metrics.csv,"ICI per 1,000",10
+B,temporal,ici,csc_cox,10.3602554959555,7.296161470003399,13.8927315594628,,main_metrics.csv,"ICI per 1,000",10
+B,temporal,ici_concordant,csc_cox,10.3602554959555,7.296161470003399,13.8927315594628,,main_metrics.csv,"ICI per 1,000",10
+B,temporal,ici_smoothfg,csc_cox,9.272510167877,5.7727678006381,13.166731451258599,,concordant_metrics.csv,"ICI per 1,000",10
+B,temporal,ici_smoothcsh,csc_cox,9.4154102229705,5.9269041365753,13.3222828186781,,concordant_metrics.csv,"ICI per 1,000",10
+B,temporal,ici_smoothnet,csc_cox,4.6340125159109,2.0085896738051003,9.254941408733199,,concordant_metrics.csv,"ICI per 1,000",10
+B,temporal,ici_concordant_austin,csc_cox,9.4154102229705,5.9269041365753,13.3222828186781,,concordant_metrics.csv,"ICI per 1,000",10

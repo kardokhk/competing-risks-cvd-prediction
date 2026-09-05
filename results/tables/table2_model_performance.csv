@@ -1,0 +1,11 @@
+Model,Family,E/O (95% CI),Calibration slope,Calibration intercept,"ICI per 1,000",C-index,"Above 5% threshold, %"
+"IPCW binomial, naive",naive,1.626 (1.468 to 1.820),0.665 (0.581 to 0.765),-0.770 (-0.943 to -0.619),21.9 (18.3 to 25.5),0.824 (0.803 to 0.842),29.5 (28.5 to 30.4)
+"Cox, naive",naive,1.481 (1.339 to 1.659),0.719 (0.629 to 0.826),-0.587 (-0.754 to -0.441),17.1 (13.7 to 20.6),0.824 (0.802 to 0.842),28.7 (27.7 to 29.6)
+"Random survival forest, naive",naive,1.489 (1.347 to 1.666),0.846 (0.713 to 1.013),-0.505 (-0.655 to -0.375),16.2 (12.9 to 20.0),0.822 (0.799 to 0.841),30.6 (29.5 to 31.6)
+"Gradient-boosted survival, naive",naive,1.520 (1.372 to 1.702),0.622 (0.540 to 0.726),-0.792 (-0.993 to -0.617),18.4 (15.6 to 22.0),0.825 (0.804 to 0.842),26.9 (25.9 to 27.8)
+"IPCW binomial, competing risk",competing risk,1.285 (1.161 to 1.438),0.759 (0.665 to 0.871),-0.376 (-0.532 to -0.237),11.4 (8.8 to 14.7),0.824 (0.803 to 0.842),26.8 (25.8 to 27.7)
+Cause-specific Cox,competing risk,1.280 (1.157 to 1.433),0.838 (0.727 to 0.972),-0.312 (-0.455 to -0.181),10.4 (7.3 to 13.9),0.823 (0.802 to 0.842),27.3 (26.4 to 28.3)
+Fine-Gray,competing risk,1.290 (1.166 to 1.443),0.877 (0.767 to 1.007),-0.271 (-0.414 to -0.142),10.8 (7.9 to 14.4),0.823 (0.802 to 0.841),28.2 (27.3 to 29.2)
+"Random survival forest, competing risk",competing risk,1.295 (1.171 to 1.449),0.957 (0.794 to 1.166),-0.290 (-0.431 to -0.168),9.8 (6.6 to 13.7),0.820 (0.798 to 0.839),29.7 (28.6 to 30.7)
+DeepHit (10-member ensemble),competing risk,1.377 (1.238 to 1.544),0.920 (0.770 to 1.130),-0.367 (-0.513 to -0.234),12.3 (8.7 to 16.3),0.829 (0.809 to 0.847),28.1 (26.9 to 29.5)
+Neural Fine-Gray (10-member ensemble),competing risk,1.283 (1.140 to 1.453),0.909 (0.758 to 1.133),-0.308 (-0.458 to -0.174),9.2 (5.7 to 13.8),0.829 (0.808 to 0.846),25.8 (23.9 to 27.6)

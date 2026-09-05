@@ -1,0 +1,21 @@
+{
+  "seed": 20260903,
+  "primary_features": ["age", "sex", "sbp", "antihtn", "totchol", "hdl", "statin", "diabetes", "smoke_current", "bmi", "egfr"],
+  "continuous": ["age", "sbp", "totchol", "hdl", "bmi", "egfr"],
+  "binary": ["sex", "antihtn", "statin", "diabetes", "smoke_current"],
+  "standardize_features": ["age", "sbp", "totchol", "hdl", "bmi", "egfr"],
+  "sex_encoding": "1 = male, 0 = female (recoded from NHANES RIAGENDR 1/2)",
+  "sensitivity_extras": ["race", "hba1c", "uacr"],
+  "design_cols": ["SDMVPSU", "SDMVSTRA", "WTMEC2YR"],
+  "horizons": [5, 10, 15],
+  "primary_horizon": 10,
+  "event_coding": {"0": "censored", "1": "CVD death (cause of interest)", "2": "competing non-CVD death"},
+  "train_startyrs": [1999, 2001, 2003, 2005],
+  "test_startyrs": [2007, 2009],
+  "holdout_startyrs": [2011, 2013, 2015, 2017],
+  "cv": {"n_splits": 5, "n_repeats_written": 5, "n_repeats_analysed": 3, "stratify_on": "event"},
+  "m_imputations": 30,
+  "thresholds_primary": [0.01, 0.02, 0.03, 0.05],
+  "thresholds_secondary": [0.075],
+  "thresholds_supplement": [0.20]
+}

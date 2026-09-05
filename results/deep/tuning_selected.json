@@ -1,0 +1,225 @@
+{
+ "deephit": {
+  "primary_criterion": "ipcw_brier_10y_inner_oof",
+  "n_configs_scored": 80,
+  "selected": {
+   "brier": {
+    "cfg_id": "deephit_070",
+    "cfg": {
+     "alpha": 0.9,
+     "batch_size": 512,
+     "dropout": 0.2,
+     "head": [
+      32,
+      32
+     ],
+     "lr": 0.01,
+     "num_durations": 20,
+     "sigma": 0.1,
+     "trunk": [
+      128,
+      128
+     ]
+    },
+    "inner_oof": {
+     "brier": 0.036365365659437404,
+     "ici": 0.0025536153227853665,
+     "eo": 1.0578869297342044,
+     "slope": 1.0377641056280817,
+     "cindex": 0.8338255682705432,
+     "auc": 0.8403203644956125,
+     "n_seeds": 3.0
+    }
+   },
+   "cindex": {
+    "cfg_id": "deephit_003",
+    "cfg": {
+     "alpha": 0.2,
+     "batch_size": 512,
+     "dropout": 0.4,
+     "head": [
+      64
+     ],
+     "lr": 0.003,
+     "num_durations": 40,
+     "sigma": 0.25,
+     "trunk": [
+      128,
+      128
+     ]
+    },
+    "inner_oof": {
+     "brier": 0.037585063735723234,
+     "ici": 0.022671954172685235,
+     "eo": 1.5144436714790244,
+     "slope": 1.1425738189856782,
+     "cindex": 0.8366597010377319,
+     "auc": 0.8432198225670153,
+     "n_seeds": 3.0
+    }
+   },
+   "ici": {
+    "cfg_id": "deephit_047",
+    "cfg": {
+     "alpha": 0.9,
+     "batch_size": 512,
+     "dropout": 0.2,
+     "head": [
+      32,
+      32
+     ],
+     "lr": 0.01,
+     "num_durations": 20,
+     "sigma": 0.5,
+     "trunk": [
+      64,
+      64
+     ]
+    },
+    "inner_oof": {
+     "brier": 0.03637566129627493,
+     "ici": 0.0016082551829301667,
+     "eo": 1.019658810896069,
+     "slope": 1.0400103811795953,
+     "cindex": 0.8337307937241393,
+     "auc": 0.8402697154839252,
+     "n_seeds": 3.0
+    }
+   }
+  },
+  "default_cfg": {
+   "cfg_id": "deephit_000",
+   "cfg": {
+    "num_durations": 40,
+    "trunk": [
+     64,
+     64
+    ],
+    "head": [
+     32
+    ],
+    "dropout": 0.1,
+    "lr": 0.01,
+    "batch_size": 256,
+    "alpha": 0.2,
+    "sigma": 0.1
+   },
+   "inner_oof": {
+    "brier": 0.037225104110012536,
+    "ici": 0.02138283350164823,
+    "eo": 1.4703212421535623,
+    "slope": 1.6996942301240532,
+    "cindex": 0.8322549605361732,
+    "auc": 0.8386818689675247,
+    "n_seeds": 3.0
+   }
+  }
+ },
+ "nfg": {
+  "primary_criterion": "ipcw_brier_10y_inner_oof",
+  "n_configs_scored": 60,
+  "selected": {
+   "brier": {
+    "cfg_id": "nfg_048",
+    "cfg": {
+     "batch_size": 128,
+     "dropout": 0.0,
+     "layers": [
+      100,
+      100
+     ],
+     "layers_surv": [
+      50,
+      50
+     ],
+     "lr": 0.005,
+     "weight_decay": 0.001
+    },
+    "inner_oof": {
+     "brier": 0.03626700202168237,
+     "ici": 0.002370079425133767,
+     "eo": 0.956881649222031,
+     "slope": 1.0251407302460203,
+     "cindex": 0.8342296723706107,
+     "auc": 0.8406660637851494,
+     "n_seeds": 3.0
+    }
+   },
+   "cindex": {
+    "cfg_id": "nfg_006",
+    "cfg": {
+     "batch_size": 256,
+     "dropout": 0.1,
+     "layers": [
+      32,
+      32
+     ],
+     "layers_surv": [
+      64
+     ],
+     "lr": 0.005,
+     "weight_decay": 0.001
+    },
+    "inner_oof": {
+     "brier": 0.036365613502271264,
+     "ici": 0.0031084994819439,
+     "eo": 1.0134556175525444,
+     "slope": 0.9905067008545938,
+     "cindex": 0.8346877202907752,
+     "auc": 0.8412248846191771,
+     "n_seeds": 3.0
+    }
+   },
+   "ici": {
+    "cfg_id": "nfg_052",
+    "cfg": {
+     "batch_size": 128,
+     "dropout": 0.25,
+     "layers": [
+      64,
+      64
+     ],
+     "layers_surv": [
+      32
+     ],
+     "lr": 0.0001,
+     "weight_decay": 0.0001
+    },
+    "inner_oof": {
+     "brier": 0.03630282563970393,
+     "ici": 0.0008059285386197668,
+     "eo": 0.9989970658868437,
+     "slope": 0.9807247624134033,
+     "cindex": 0.832141262071552,
+     "auc": 0.8385959437105878,
+     "n_seeds": 3.0
+    }
+   }
+  },
+  "default_cfg": {
+   "cfg_id": "nfg_000",
+   "cfg": {
+    "layers": [
+     32,
+     32
+    ],
+    "layers_surv": [
+     32
+    ],
+    "dropout": 0.1,
+    "lr": 0.001,
+    "batch_size": 256,
+    "weight_decay": 0.001
+   },
+   "inner_oof": {
+    "brier": 0.036312019915906636,
+    "ici": 0.0029662496629669667,
+    "eo": 0.9548546159017302,
+    "slope": 0.9201362535494222,
+    "cindex": 0.8332906625126245,
+    "auc": 0.839896950628768,
+    "n_seeds": 3.0
+   }
+  }
+ }
+}

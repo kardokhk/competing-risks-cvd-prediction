@@ -1,0 +1,88 @@
+panel_group,metric,contrast,label,x,est,lo,hi,ci_excludes_zero,units,split,horizon_y
+calibration,eo,cox_naive - csc_cox,Cox,,0.1574318985144297,0.1480381563305854,0.1668072134256362,True,Δ E/O (naive − competing risk),cv,10
+calibration,eo,rsf_naive - rsf_cr,Random survival forest,,0.1620319008827209,0.1525010347366333,0.1716963201761245,True,Δ E/O (naive − competing risk),cv,10
+calibration,eo,logistic - logistic_cr,IPCW binomial,,0.4141354004542033,0.3902682870626449,0.4383627206087112,True,Δ E/O (naive − competing risk),cv,10
+calibration,calib_slope,cox_naive - csc_cox,Cox,,-0.1315859655539194,-0.1508026748895645,-0.11351078748703,True,Δ calibration slope,cv,10
+calibration,calib_slope,rsf_naive - rsf_cr,Random survival forest,,-0.1169966797033945,-0.1475819215178489,-0.0921285331249237,True,Δ calibration slope,cv,10
+calibration,calib_slope,logistic - logistic_cr,IPCW binomial,,-0.1433955132961273,-0.1572470873594284,-0.1316448166966438,True,Δ calibration slope,cv,10
+calibration,ici,cox_naive - csc_cox,Cox,,4.452559351921,2.7137779048644,5.7683863909915,True,"Δ ICI (per 1,000)",cv,10
+calibration,ici,rsf_naive - rsf_cr,Random survival forest,,5.7549881127973,2.8131911880336,6.2350563472136,True,"Δ ICI (per 1,000)",cv,10
+calibration,ici,logistic - logistic_cr,IPCW binomial,,15.0429465187092,13.7206030311062,15.480266651138601,True,"Δ ICI (per 1,000)",cv,10
+net_benefit,nb_at_0.01,cox_naive - csc_cox,Cox,0.01,-0.011589316030343372,-0.04976242780685425,0.046566128730773926,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.02,cox_naive - csc_cox,Cox,0.02,-0.019728826979796093,-0.1197161152958,0.1177554484456,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.03,cox_naive - csc_cox,Cox,0.03,-0.042463342348734535,-0.1831887755542,0.12453999370329999,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.05,cox_naive - csc_cox,Cox,0.05,0.06096217160423596,-0.2537998137995,0.40467511862509997,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.075,cox_naive - csc_cox,Cox,0.075,0.09418918440739314,-0.319906650111,0.5474711768329,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.2,cox_naive - csc_cox,Cox,0.2,0.1641716701366,-0.5419809938757,0.8730573477805,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.01,rsf_naive - rsf_cr,Random survival forest,0.01,-0.0063608090082804365,-0.1820280216634,0.16314811073240001,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.02,rsf_naive - rsf_cr,Random survival forest,0.02,0.006902838746706645,-0.1987072639167,0.2233219332993,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.03,rsf_naive - rsf_cr,Random survival forest,0.03,0.09804237633943556,-0.161464465782,0.36273431032889997,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.05,rsf_naive - rsf_cr,Random survival forest,0.05,0.12771515175700002,-0.1952370628714,0.4952020710334,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.075,rsf_naive - rsf_cr,Random survival forest,0.075,-0.034720481683810554,-0.42851178441189997,0.3907145000994,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.2,rsf_naive - rsf_cr,Random survival forest,0.2,-0.342259726464,-1.2496380368247,0.5575944640439999,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.01,logistic - logistic_cr,IPCW binomial,0.01,0.02052485942840576,-0.1803664024919,0.198042532429,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.02,logistic - logistic_cr,IPCW binomial,0.02,0.07762207339207332,-0.08818693459033966,0.2363940235227,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.03,logistic - logistic_cr,IPCW binomial,0.03,-0.054789582888285324,-0.26490236632520003,0.19672927446660002,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.05,logistic - logistic_cr,IPCW binomial,0.05,-0.1567147982617,-0.5913806147873,0.3163829445838,False,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.075,logistic - logistic_cr,IPCW binomial,0.075,-0.8122515243788,-1.4110584044829,-0.1661736052483,True,"net true positives per 1,000 screened",cv,10
+net_benefit,nb_at_0.2,logistic - logistic_cr,IPCW binomial,0.2,-3.4932738170027,-4.6171100693754,-2.32231807895,True,"net true positives per 1,000 screened",cv,10
+frac_above,frac_above_0.01,logistic,"Binomial, naive",0.01,63.31853667894999,,,False,% of sample,cv,10
+frac_above,frac_above_0.01,cox_naive,"Cox, naive",0.01,58.832025130589805,,,False,% of sample,cv,10
+frac_above,frac_above_0.01,rsf_naive,"RSF, naive",0.01,55.3167066971461,,,False,% of sample,cv,10
+frac_above,frac_above_0.01,gbs_naive,"Gradient boosting, naive",0.01,54.78543758392333,,,False,% of sample,cv,10
+frac_above,frac_above_0.01,logistic_cr,"Binomial, competing",0.01,66.87811036904652,,,False,% of sample,cv,10
+frac_above,frac_above_0.01,csc_cox,Cause-specific Cox,0.01,58.430900971094765,,,False,% of sample,cv,10
+frac_above,frac_above_0.01,fine_gray,Fine-Gray,0.01,62.78265198071797,,,False,% of sample,cv,10
+frac_above,frac_above_0.01,rsf_cr,"RSF, competing",0.01,55.53052643934886,,,False,% of sample,cv,10
+frac_above,frac_above_0.01,deephit,DeepHit,0.01,56.15057329336802,,,False,% of sample,cv,10
+frac_above,frac_above_0.01,nfg,Neural Fine-Gray,0.01,52.96328663825989,,,False,% of sample,cv,10
+frac_above,frac_above_0.02,logistic,"Binomial, naive",0.02,49.91100549697876,,,False,% of sample,cv,10
+frac_above,frac_above_0.02,cox_naive,"Cox, naive",0.02,44.95910724004109,,,False,% of sample,cv,10
+frac_above,frac_above_0.02,rsf_naive,"RSF, naive",0.02,43.66576751073202,,,False,% of sample,cv,10
+frac_above,frac_above_0.02,gbs_naive,"Gradient boosting, naive",0.02,41.43933316071828,,,False,% of sample,cv,10
+frac_above,frac_above_0.02,logistic_cr,"Binomial, competing",0.02,50.49136102199554,,,False,% of sample,cv,10
+frac_above,frac_above_0.02,csc_cox,Cause-specific Cox,0.02,44.238023261229195,,,False,% of sample,cv,10
+frac_above,frac_above_0.02,fine_gray,Fine-Gray,0.02,46.56074275573095,,,False,% of sample,cv,10
+frac_above,frac_above_0.02,rsf_cr,"RSF, competing",0.02,43.54086190462112,,,False,% of sample,cv,10
+frac_above,frac_above_0.02,deephit,DeepHit,0.02,42.57493396600088,,,False,% of sample,cv,10
+frac_above,frac_above_0.02,nfg,Neural Fine-Gray,0.02,38.830405175685875,,,False,% of sample,cv,10
+frac_above,frac_above_0.03,logistic,"Binomial, naive",0.03,42.14872568845749,,,False,% of sample,cv,10
+frac_above,frac_above_0.03,cox_naive,"Cox, naive",0.03,36.53371493021647,,,False,% of sample,cv,10
+frac_above,frac_above_0.03,rsf_naive,"RSF, naive",0.03,36.40624364217122,,,False,% of sample,cv,10
+frac_above,frac_above_0.03,gbs_naive,"Gradient boosting, naive",0.03,34.034680227438606,,,False,% of sample,cv,10
+frac_above,frac_above_0.03,logistic_cr,"Binomial, competing",0.03,41.04571501413981,,,False,% of sample,cv,10
+frac_above,frac_above_0.03,csc_cox,Cause-specific Cox,0.03,35.53967912991841,,,False,% of sample,cv,10
+frac_above,frac_above_0.03,fine_gray,Fine-Gray,0.03,36.88329448302587,,,False,% of sample,cv,10
+frac_above,frac_above_0.03,rsf_cr,"RSF, competing",0.03,35.99928716818492,,,False,% of sample,cv,10
+frac_above,frac_above_0.03,deephit,DeepHit,0.03,35.48100610574086,,,False,% of sample,cv,10
+frac_above,frac_above_0.03,nfg,Neural Fine-Gray,0.03,31.87388430039088,,,False,% of sample,cv,10
+frac_above,frac_above_0.05,logistic,"Binomial, naive",0.05,32.33759661515554,,,False,% of sample,cv,10
+frac_above,frac_above_0.05,cox_naive,"Cox, naive",0.05,26.03320042292277,,,False,% of sample,cv,10
+frac_above,frac_above_0.05,rsf_naive,"RSF, naive",0.05,26.97787821292877,,,False,% of sample,cv,10
+frac_above,frac_above_0.05,gbs_naive,"Gradient boosting, naive",0.05,24.63879644870758,,,False,% of sample,cv,10
+frac_above,frac_above_0.05,logistic_cr,"Binomial, competing",0.05,29.18751786152522,,,False,% of sample,cv,10
+frac_above,frac_above_0.05,csc_cox,Cause-specific Cox,0.05,24.51648265123367,,,False,% of sample,cv,10
+frac_above,frac_above_0.05,fine_gray,Fine-Gray,0.05,24.711455653111138,,,False,% of sample,cv,10
+frac_above,frac_above_0.05,rsf_cr,"RSF, competing",0.05,25.74623545010884,,,False,% of sample,cv,10
+frac_above,frac_above_0.05,deephit,DeepHit,0.05,26.781339347362522,,,False,% of sample,cv,10
+frac_above,frac_above_0.05,nfg,Neural Fine-Gray,0.05,23.60339552164077,,,False,% of sample,cv,10
+frac_above,frac_above_0.075,logistic,"Binomial, naive",0.075,24.60966249306996,,,False,% of sample,cv,10
+frac_above,frac_above_0.075,cox_naive,"Cox, naive",0.075,17.95142004887263,,,False,% of sample,cv,10
+frac_above,frac_above_0.075,rsf_naive,"RSF, naive",0.075,19.45938939849535,,,False,% of sample,cv,10
+frac_above,frac_above_0.075,gbs_naive,"Gradient boosting, naive",0.075,17.615880817174908,,,False,% of sample,cv,10
+frac_above,frac_above_0.075,logistic_cr,"Binomial, competing",0.075,19.7526183227698,,,False,% of sample,cv,10
+frac_above,frac_above_0.075,csc_cox,Cause-specific Cox,0.075,15.927735020716979,,,False,% of sample,cv,10
+frac_above,frac_above_0.075,fine_gray,Fine-Gray,0.075,15.40688902139663,,,False,% of sample,cv,10
+frac_above,frac_above_0.075,rsf_cr,"RSF, competing",0.075,17.48082275191942,,,False,% of sample,cv,10
+frac_above,frac_above_0.075,deephit,DeepHit,0.075,19.66861868898073,,,False,% of sample,cv,10
+frac_above,frac_above_0.075,nfg,Neural Fine-Gray,0.075,17.13415915767351,,,False,% of sample,cv,10
+frac_above,frac_above_0.2,logistic,"Binomial, naive",0.2,8.16135150690873,,,False,% of sample,cv,10
+frac_above,frac_above_0.2,cox_naive,"Cox, naive",0.2,3.59702343742052,,,False,% of sample,cv,10
+frac_above,frac_above_0.2,rsf_naive,"RSF, naive",0.2,4.29161977022886,,,False,% of sample,cv,10
+frac_above,frac_above_0.2,gbs_naive,"Gradient boosting, naive",0.2,4.60968952625989,,,False,% of sample,cv,10
+frac_above,frac_above_0.2,logistic_cr,"Binomial, competing",0.2,3.3957322314381604,,,False,% of sample,cv,10
+frac_above,frac_above_0.2,csc_cox,Cause-specific Cox,0.2,1.85549697528282,,,False,% of sample,cv,10
+frac_above,frac_above_0.2,fine_gray,Fine-Gray,0.2,1.56931517024834,,,False,% of sample,cv,10
+frac_above,frac_above_0.2,rsf_cr,"RSF, competing",0.2,1.58983579215904,,,False,% of sample,cv,10
+frac_above,frac_above_0.2,deephit,DeepHit,0.2,2.05543809259931,,,False,% of sample,cv,10
+frac_above,frac_above_0.2,nfg,Neural Fine-Gray,0.2,1.56275397787491,,,False,% of sample,cv,10
