@@ -33,8 +33,8 @@ export XDG_CACHE_HOME=${CACHE_DIR}
 export PIP_CACHE_DIR=${CACHE_DIR}/pip
 ```
 
-`${WORK_PREFIX}` is a symlink to `/mnt/tier2/project/p201509`; exported prefixes
-show the physical path.
+`${WORK_PREFIX}` was a project filesystem on the machine used for the analysis.
+Set it to any writable location with room for the environments and caches.
 
 ## Environments
 

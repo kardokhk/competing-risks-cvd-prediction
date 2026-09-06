@@ -69,6 +69,33 @@ against `${ENV_PREFIX}` and `<REPO_ROOT>`; set those for your machine.
 
 Seed 20260903 throughout.
 
+### Redoing the analysis from what is in this repository
+
+Everything the paper reports can be recomputed from the files here, in this order.
+
+1. **Verify the inputs.** `python src/data/download.py` re-fetches all 131 raw NHANES and NCHS
+   files and writes a manifest with SHA-256 hashes. Compare it against `data/raw/manifest.csv`;
+   the copies used in the analysis were re-verified byte-identical on 4 September 2026 and the
+   result of that check is in `data/raw/verification_20260904.csv`.
+2. **Rebuild the cohort**, or skip this and use the copy provided. `src/data/` assembles
+   `data/processed/analytic.parquet` (41,151 rows, 31 columns) from the raw files. The assembled
+   file is included here, so steps 3 onward run without step 1.
+3. **Impute, fit and evaluate.** `src/v2/run_all.sh` gives the order of the numbered scripts,
+   from `01_impute.R` through the evaluation and pooling. The imputation, the model fits and the
+   shared-index bootstrap are the expensive steps; the Slurm scripts are included as they were
+   submitted.
+4. **Recompute the closed form.** `src/closed_form/` derives the identity, validates it against
+   the fitted predictions, and writes `results/closed_form/`. This runs in seconds and needs only
+   the Python stack.
+5. **Rebuild the tables and figures.** `python src/v2/14_tables.py` writes the three main tables,
+   and `bash src/v2/figures/run_all.sh` regenerates all twelve figures with the `_data.csv` file
+   behind every panel.
+
+Steps 4 and 5 read only files that are in this repository, so the closed-form result, all tables
+and all figures can be reproduced without rerunning any model. Steps 1 to 3 reproduce the fitted
+predictions themselves and need the two environments and a machine with the memory and time noted
+above.
+
 ## Reading the results
 
 `results/metrics_v2/SUMMARY.md` states every number the paper quotes and the script that produced
@@ -87,9 +114,18 @@ Two columns in `results/metrics_v2/main_metrics.csv` and `paired_contrasts.csv` 
 
 Both are documented rather than removed, because a reader should be able to see them.
 
+## Authors
+
+Kardokh Kakabra (ORCID 0009-0000-4403-8607) and Osama Soliman (ORCID 0000-0003-0758-3539),
+Cardiovascular Research Institute Dublin (CVRI Dublin) and RCSI University of Medicine and Health
+Sciences, Dublin, Ireland. Correspondence to Osama Soliman, osamasoliman@rcsi.com.
+
 ## Citation
 
-Citation details will be added on publication.
+Cite this repository using `CITATION.cff`, which GitHub renders as a ready-made citation under
+"Cite this repository". The release tagged `v1.0.0` is the version the manuscript reports; cite
+that tag rather than `main` if you need a fixed reference. Details of the article will be added
+here on publication, together with an archival Zenodo DOI.
 
 ## Licence
 

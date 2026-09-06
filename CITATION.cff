@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software or the data products in it, please cite the repository, and cite the article once it is published."
+title: "Competing risks in machine-learning cardiovascular risk prediction: analysis pipeline"
+abstract: >-
+  Reproducible pipeline for a paired-learner benchmark of naive and competing-risk
+  survival models for 10-year cardiovascular mortality in NHANES 1999-2018 linked to
+  the NCHS 2019 public-use Linked Mortality File, with the full calibration hierarchy,
+  inverse-probability-of-censoring-weighted discrimination, competing-risk-consistent
+  net benefit, and a closed-form decomposition of the naive-versus-competing difference.
+type: software
+version: 1.0.0
+date-released: "2026-09-06"
+license: MIT
+repository-code: "https://github.com/kardokhk/competing-risks-cvd-prediction"
+keywords:
+  - competing risks
+  - cumulative incidence
+  - clinical prediction model
+  - calibration
+  - decision curve analysis
+  - machine learning
+  - NHANES
+authors:
+  - family-names: Kakabra
+    given-names: Kardokh
+    orcid: "https://orcid.org/0009-0000-4403-8607"
+    affiliation: "Cardiovascular Research Institute Dublin (CVRI Dublin) and RCSI University of Medicine and Health Sciences, Dublin, Ireland"
+  - family-names: Soliman
+    given-names: Osama
+    orcid: "https://orcid.org/0000-0003-0758-3539"
+    affiliation: "Cardiovascular Research Institute Dublin (CVRI Dublin) and RCSI University of Medicine and Health Sciences, Dublin, Ireland"
