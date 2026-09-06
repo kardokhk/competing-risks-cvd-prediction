@@ -43,8 +43,12 @@ _ASSETS = Path.home() / ".claude" / "academic" / "assets"
 if str(_ASSETS) not in sys.path:
     sys.path.insert(0, str(_ASSETS))
 
-os.environ.setdefault("XDG_CACHE_HOME", "${CACHE_DIR}")
-os.environ.setdefault("MPLCONFIGDIR", "${CACHE_DIR}/matplotlib")
+# Keep matplotlib's font cache out of $HOME, which was inode-limited on the
+# machine this analysis ran on. Honours XDG_CACHE_HOME when the caller sets it,
+# and otherwise falls back to the platform default, so it is portable.
+_cache = os.environ.get("XDG_CACHE_HOME") or str(Path.home() / ".cache")
+os.environ["XDG_CACHE_HOME"] = _cache
+os.environ.setdefault("MPLCONFIGDIR", str(Path(_cache) / "matplotlib"))
 
 import figstyle  # noqa: E402
 import figqa  # noqa: E402
