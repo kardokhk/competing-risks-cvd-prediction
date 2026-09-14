@@ -2,7 +2,7 @@
 
 Captured 2026-09-03 on MeluXina (EuroHPC, LuxProvide), user `u104629`, compute account
 `p201509`. This file supersedes `env/README.md`, which documents the *previous* machine
-(conda environments `base`, `cr_dl`, `r_440` under `${HOME}/`). Those environments
+(conda environments `base`, `cr_dl`, `r_440` under `/home/kardokhk/`). Those environments
 do not exist here and none of their paths resolve.
 
 ## Host
@@ -15,7 +15,7 @@ do not exist here and none of their paths resolve.
 | glibc | 2.28 |
 | System libstdc++ | 6.0.25, max `GLIBCXX_3.4.25` (see the libstdc++ note below) |
 | Package manager | micromamba 2.9.0, `~/.local/bin/micromamba` |
-| Project root | `<REPO_ROOT>` |
+| Project root | `/mnt/tier2/users/u104629/work/cvri/papers/ctrcd/methods_paper` |
 
 `module` is not available on login nodes, so `module load` cannot be used. The login-node
 `python3` is 3.6.8 and `pandoc`, `node` and `npm` are absent; all interpreters below come
@@ -23,18 +23,18 @@ from micromamba environments instead.
 
 ### Required shell exports
 
-Environments and package caches must live under `${WORK_PREFIX}` (4 TB, 1M inodes).
+Environments and package caches must live under `/project/home/p201509` (4 TB, 1M inodes).
 `$HOME` is limited to 100,000 files and must not receive either. Export before any
 micromamba or pip call:
 
 ```bash
-export MAMBA_ROOT_PREFIX=${WORK_PREFIX}/micromamba
-export XDG_CACHE_HOME=${CACHE_DIR}
-export PIP_CACHE_DIR=${CACHE_DIR}/pip
+export MAMBA_ROOT_PREFIX=/project/home/p201509/micromamba
+export XDG_CACHE_HOME=/project/home/p201509/cache
+export PIP_CACHE_DIR=/project/home/p201509/cache/pip
 ```
 
-`${WORK_PREFIX}` was a project filesystem on the machine used for the analysis.
-Set it to any writable location with room for the environments and caches.
+`/project/home/p201509` is a symlink to `/mnt/tier2/project/p201509`; exported prefixes
+show the physical path.
 
 ## Environments
 
@@ -45,19 +45,19 @@ scripts are run **from the repository root**, because much of the pipeline reads
 
 | Environment | Prefix | Interpreter | Used by |
 |---|---|---|---|
-| `crcvd-py` | `${ENV_PREFIX}/crcvd-py` | Python 3.11.16 | data build, classical and ML survival models, figures |
-| `crcvd-r` | `${ENV_PREFIX}/crcvd-r` | R 4.5.3 | competing-risk models, evaluation, bootstrap, sensitivity analyses |
-| `crcvd-dl` | `${ENV_PREFIX}/crcvd-dl` | Python 3.10.21 | DeepHit, Neural Fine-Gray |
+| `crcvd-py` | `/project/home/p201509/envs/crcvd-py` | Python 3.11.16 | data build, classical and ML survival models, figures |
+| `crcvd-r` | `/project/home/p201509/envs/crcvd-r` | R 4.5.3 | competing-risk models, evaluation, bootstrap, sensitivity analyses |
+| `crcvd-dl` | `/project/home/p201509/envs/crcvd-dl` | Python 3.10.21 | DeepHit, Neural Fine-Gray |
 
 ```bash
 # crcvd-py
-${ENV_PREFIX}/crcvd-py/bin/python src/data/build.py
+/project/home/p201509/envs/crcvd-py/bin/python src/data/build.py
 
 # crcvd-r  (run from the repository root)
-${ENV_PREFIX}/crcvd-r/bin/Rscript src/eval/run_eval.R
+/project/home/p201509/envs/crcvd-r/bin/Rscript src/eval/run_eval.R
 
 # crcvd-dl  -- use python-cr, NOT python (see the libstdc++ note)
-${ENV_PREFIX}/crcvd-dl/bin/python-cr src/models/c5_deephit.py
+/project/home/p201509/envs/crcvd-dl/bin/python-cr src/models/c5_deephit.py
 ```
 
 ### `crcvd-py` (Python 3.11.16)
@@ -121,10 +121,10 @@ dependencies from conda-forge first, then pip for the survival libraries, then t
 the PyTorch CPU index. Full export: `env/crcvd-dl.yml`.
 
 ```bash
-micromamba create -y -p ${ENV_PREFIX}/crcvd-dl -c conda-forge \
+micromamba create -y -p /project/home/p201509/envs/crcvd-dl -c conda-forge \
   python=3.10 pyarrow h5py numba scipy pandas scikit-learn numpy matplotlib tqdm pip
-${ENV_PREFIX}/crcvd-dl/bin/pip install pycox torchtuples scikit-survival lifelines
-${ENV_PREFIX}/crcvd-dl/bin/pip install torch --index-url https://download.pytorch.org/whl/cpu
+/project/home/p201509/envs/crcvd-dl/bin/pip install pycox torchtuples scikit-survival lifelines
+/project/home/p201509/envs/crcvd-dl/bin/pip install torch --index-url https://download.pytorch.org/whl/cpu
 ```
 
 | Package | Version | Source | Previous machine |
@@ -159,10 +159,10 @@ the failure and leaves torch working.
 
 Two fixes are installed:
 
-* `${ENV_PREFIX}/crcvd-dl/bin/python-cr`, a wrapper that sets
+* `/project/home/p201509/envs/crcvd-dl/bin/python-cr`, a wrapper that sets
   `LD_LIBRARY_PATH=$PREFIX/lib` and execs the real interpreter. **Use this as the
   interpreter for every script in this environment.**
-* `${ENV_PREFIX}/crcvd-dl/etc/conda/activate.d/zzz_libstdcxx.sh`, which
+* `/project/home/p201509/envs/crcvd-dl/etc/conda/activate.d/zzz_libstdcxx.sh`, which
   applies the same export for `micromamba activate` and `micromamba run`.
 
 `bin/python` happens to work for `c5_deephit.py`, `cv_deephit.py` and `c6_nfg.py` as
@@ -250,8 +250,35 @@ No number in the current manuscript comes from it.
 
 Six files carry paths from the previous machine and will fail as written. They are listed
 with line numbers in `notes/scratch/2026-09-03-e0-environment.md`. In summary: four R and
-Python scripts hard-code `ROOT <- "<REPO_ROOT>"`, and
+Python scripts hard-code `ROOT <- "/mnt/gpuws/kardokhk/woi/tout/methods"`, and
 `src/eval/watchdog.sh` hard-codes both that directory and a `conda.sh` under
-`${HOME}`. A further nine files reference the old conda activation only inside
+`/home/kardokhk`. A further nine files reference the old conda activation only inside
 comments or docstrings, which is harmless to execution but misleading. None of these were
 changed; fixing them belongs to whoever owns the pipeline.
+
+## Public release
+
+The analysis is published at `https://github.com/kardokhk/competing-risks-cvd-prediction`,
+release `v1.0.0`, commit `f444aafada418d53e8e7be78df00d6df9e36dcc7`, MIT licensed. That release is
+the version the manuscript reports and is what the data availability statement cites. It carries
+`src/data`, `src/v2` and `src/closed_form`, the evaluation outputs, the twelve figures with the
+plotted values behind each panel, `data/processed/analytic.parquet` with its codebook and cohort
+flow, and the 131-file raw-data manifest with SHA-256 hashes and the 2026-09-04 re-verification.
+
+Verified from a fresh clone on 2026-09-06: `src/v2/14_tables.py`, the twelve scripts in
+`src/v2/figures/` and the three Python steps of `src/closed_form/` all run against the released
+files alone and return Tables 1 to 3, all twelve `_data.csv` files and every file in
+`results/closed_form/` byte-identical to the released copies, with no model refitted. That check
+found two defects, both now fixed: the closed-form steps needed a model matrix, a cause-2
+prediction file and four per-subject prediction files that had been left out, and
+`src/v2/figures/figlib.py` set the matplotlib cache to the literal string `${CACHE_DIR}`, a
+leftover of stripping absolute paths before publication, so every figure run created a directory
+of that name.
+
+The manuscript, cover letter, supplement, tables document and TRIPOD+AI checklist are deliberately
+absent from it until the paper is accepted, and their absence was verified by API after the push.
+`src/v2/17_assemble_submission.py`, `src/v2/18_build_supplement.py` and `src/v2/19_build_docx.sh`
+build the submission documents and are held back for the same reason.
+
+Absolute paths from this cluster were replaced by `<REPO_ROOT>`, `${ENV_PREFIX}`, `${WORK_PREFIX}`
+and `${CACHE_DIR}` before publication, and no author email appears anywhere in the released tree.

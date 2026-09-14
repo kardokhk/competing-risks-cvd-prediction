@@ -502,8 +502,8 @@ def main() -> int:
         ("Hyperparameter tuning", "gradient boosting only",
          "none, all families pre-specified",
          "tuning one family and not the others makes the comparison asymmetric"),
-        ("Hard-coded paths", "six files carry `<REPO_ROOT>",
-         "repo root derived relatively in every script", "portability"),
+        ("Hard-coded paths", "six files carried absolute paths from an earlier machine",
+         "repo root read from CRCVD_ROOT or the working directory", "portability"),
         ("Estimator provenance", "hand-rolled, unvalidated",
          "validated against riskRegression, pec, geepack and prodlim in "
          "`validation/comparison__*.csv`",

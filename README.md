@@ -132,8 +132,11 @@ Sciences, Dublin, Ireland. Correspondence to Osama Soliman, osamasoliman@rcsi.co
 ## Citation
 
 Cite this repository using `CITATION.cff`, which GitHub renders as a ready-made citation under
-"Cite this repository". The release tagged `v1.0.0` is the version the manuscript reports; cite
-that tag rather than `main` if you need a fixed reference. Details of the article will be added
+"Cite this repository". The release tagged `v2.0.0` is the version the manuscript reports; cite
+that tag rather than `main` if you need a fixed reference. `v1.0.0` is superseded: it applied the
+CKD-EPI 2021 equation to NHANES serum creatinine exactly as released, without the standardisation
+NCHS publishes for the 1999-2000 and 2005-2006 cycles, and its eGFR is not comparable across
+cycles. Details of the article will be added
 here on publication, together with an archival Zenodo DOI.
 
 ## Licence
